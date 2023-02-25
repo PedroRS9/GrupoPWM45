@@ -1,17 +1,22 @@
 #footer {
     background-color: var(--negro);
+
     height: 5.5rem;
     width: 100%;
+
     justify-content: space-between;
     align-items: center;
+
     padding-left: 2rem;
     padding-right: 2rem;
 }
 
 #footer ul {
     list-style-type: none;
+
     justify-content: space-around;
     align-items: center;
+
     height: 100%;
 }
 
@@ -30,14 +35,17 @@
 #footer-links {
     width: 48rem;
     font-size: 1.2rem;
+
     text-align: center;
 }
 
 #footer-links a {
     color: var(--gris);
-    white-space: nowrap;
     font-weight: bolder;
+
+    line-height: .1rem;
     width: max-content;
     margin: 1rem;
-    line-height: .1rem;
+
+    white-space: nowrap;
 }

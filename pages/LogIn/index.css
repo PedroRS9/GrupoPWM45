@@ -1,4 +1,116 @@
+/* *=> modal */
+
 .semi-modal {
-    background-color: var(--black);
-    width: 50%;
+    width: 100vw;
+    height: 100vh;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.semi-modal section {
+    background-color: var(--negro);
+
+    width: 50vw;
+    height: 70vh;
+
+    border-radius: 8px;
+}
+
+
+/* *=> heading */
+
+.semi-modal h2 {
+    font-size: 2.5rem;
+    color: var(--azul_oscuro);
+    font-weight: bold;
+
+    padding: 1.8rem;
+    padding-bottom: 1.5;
+    text-align: center;
+}
+
+.semi-modal hr {
+    border-color: var(--azul_oscuro);
+    background-color: var(--azul_oscuro);
+
+    width: 92%;
+    height: .09rem;
+}
+
+
+/* *=> form */
+
+.semi-modal form {
+    height: 58%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.semi-modal div {
+    width: 80%;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.semi-modal label {
+    color: var(--gris);
+    align-self: center;
+    font-size: 1.5rem;
+    margin-left: .2rem;
+}
+
+.semi-modal label::after {
+    content: ":";
+    margin: .3rem;
+}
+
+.semi-modal input::placeholder {
+    padding: 0 5px;
+}
+
+.semi-modal input[type="password"]:not(:placeholder-shown) {
+    font-size: 2rem;
+}
+
+.semi-modal input {
+    border-radius: 5px;
+    width: 25rem;
+    height: 2rem;
+}
+
+.semi-modal input {
+    padding: 0 5px;
+}
+
+/* link */
+
+.semi-modal a {
+    color: var(--azul_brillante);
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    display: block;
+    text-align: center;
+}
+
+/* *=> button */
+
+.semi-modal button {
+    background-color: var(--azul_oscuro);
+    font-size: 1.5rem;
+    color: var(--gris);
+    font-weight: bold;
+
+    display: block;
+    margin: auto;
+    text-align: center;
+
+    width: 10rem;
+    height: 3.5rem;
+
+    border-radius: 8px;
+
+    margin-top: 1.2rem;
 }
