@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="../../../styles/index.css">
+<link rel="stylesheet" href="../index.css">
+<link rel="stylesheet" href="index.css">
+<div class="semi-modal flex">
+    <section>
+        <h2>Subscripción</h2>
+        <hr>
+
+        <h3>Tipo de suscripción elegida</h3>
+        <p>Mensual (por ejemplo)</p>
+
+        <h3>Datos personales</h3>
+
+        <form id="subscription-form" class="flex" method="post" action="//TODO">
+
+            <fieldset class="flex">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="escribe aquí tu nombre..." required>
+            </fieldset>
+            <fieldset class="flex">
+                <label for="lastname">Apellidos</label>
+                <input type="text" id="lastname" name="lastname" placeholder="escribe aquí tu apellido..." required>
+            </fieldset>
+
+            <fieldset class="flex">
+                <label for="country">País</label>
+                <select id="country" name="country">
+                    <!--TODO-->
+                </select>
+            </fieldset>
+            <fieldset class="flex">
+                <label for="province">Provincia</label>
+                <select id="province" name="province">
+                    <!--TODO-->
+                </select>
+            </fieldset>
+
+            <h3>Pago</h3>
+
+            <div>
+                <fieldset>
+                    <label for="credit-card">
+                        <img src="../../../icons/credit-card.svg" alt="credit card">
+                        Tarjeta de crédito
+                    </label>
+                    <input type="radio" name="pay-method" id="credit-card">
+                </fieldset>
+
+                <fieldset>
+                    <label for="paypal">
+                        <img src="../../../icons/paypal.svg" alt="credit card">
+                        PayPal
+                    </label>
+                    <input type="radio" name="pay-method" id="paypal">
+                </fieldset>
+            </div>
+        </form>
+
+        <button type="submit" form="signup-form">PAGAR</button>
+
+    </section>
+
+</div>

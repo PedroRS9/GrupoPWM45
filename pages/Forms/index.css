@@ -1,18 +1,15 @@
 /* *=> modal */
 
 .semi-modal {
-    width: 100vw;
-    height: 100vh;
-
     justify-content: center;
     align-items: center;
+    padding-top: 5rem;
 }
 
 .semi-modal section {
     background-color: var(--negro);
 
     width: 45rem;
-    height: 35rem;
 
     border-radius: 10px;
 }
@@ -44,13 +41,13 @@
 .semi-modal form {
     margin-top: 2rem;
     margin-bottom: 1rem;
-    height: 45%;
+
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
-.semi-modal div {
+.semi-modal fieldset {
     width: 90%;
     justify-content: space-between;
     align-items: center;
@@ -64,22 +61,23 @@
     margin-left: .2rem;
     white-space: pre-wrap;
     width: min-content;
+    max-height: 4rem;
 }
 
 .semi-modal label::after {
     content: ":";
     margin: .3rem;
-    line-height: 50%;
+    line-height: 60%;
     margin-left: .5rem;
 }
 
 .semi-modal label[for="repeat-password"]::after {
-    /* FIXME */
     position: relative;
-    bottom: 1.5rem;
+    bottom: 2rem;
 }
 
-.semi-modal input {
+.semi-modal input,
+.semi-modal select {
     border-radius: 8px;
     width: 29rem;
     height: 2.8rem;
@@ -97,17 +95,6 @@
 }
 
 
-/* link */
-
-.semi-modal a {
-    color: var(--azul_brillante);
-    font-size: 1.5rem;
-    font-weight: bold;
-
-    display: block;
-    text-align: center;
-    margin-top: .5rem;
-}
 
 /* *=> button */
 
@@ -125,7 +112,6 @@
     height: 4.5rem;
 
     border-radius: 8px;
-    position: relative;
-    top: 3rem;
     margin-top: 1.2rem;
+    margin-bottom: 2rem;
 }

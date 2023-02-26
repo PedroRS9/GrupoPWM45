@@ -1,0 +1,11 @@
+/* link */
+
+.semi-modal a {
+    color: var(--azul_brillante);
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    display: block;
+    text-align: center;
+    margin-top: .5rem;
+}
