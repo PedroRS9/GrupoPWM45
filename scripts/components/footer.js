@@ -1,3 +1,3 @@
-import { load } from "../index.js"
+import { loadOver } from "../index.js"
 
-load("../../../components/Footer/index.html", document.querySelector("body"))
+loadOver("../../../components/Footer/index.html", document.querySelector('script[src="/scripts/components/footer.js"]'))
