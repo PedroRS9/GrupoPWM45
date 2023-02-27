@@ -1,183 +1,152 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+/*-------RESET-------*/
+
+*{
     list-style: none;
-    font-size: 1.02em;
-    text-decoration: none;
-    color: #000000;
+    font-size: 1.05rem;
+    text-decoration: none !important;
+    color: var(--negro);
 }
+
+/*-------HEADER-------*/
 
 .header {
-    background-color: #1F1D1D;
+    background-color: var(--negro);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 0.2% 10%;
     width: 100%;
-    height: 10%;
-}
-
-body {
-    background-color: rgb(255, 255, 255);
-    display: block;
-}
-
-
-.header .nav-links li {
-    display: inline-block;
-    padding: 20px;
-}
-
-.header .other-links li {
-    display: inline-block;
-    padding: 20px;
-}
-
-.header .logo img:hover {
-    transform: scale(1.05);
-    transition: 250ms;
-}
-
-.header .nav-links li:hover {
-    transform: scale(1.1);
-    transition: 200ms;
-}
-
-.header .other-links li:hover {
-    transform: scale(1.1);
-    transition: 200ms;
+    height: 3rem;
 }
 
 .header .logo img {
-    height: 55px;
-    width: auto;
-}
-
-.header .busqueda img {
-    height: 35px;
-    width: auto;
+    height: 2.5rem;
     cursor: pointer;
-    transform: translateY(12px);
+}
+.header .busqueda img{
+    height: 2rem;
+    cursor: pointer;
 }
 
-.header a {
-    color: #5095AD;
+.header  li:hover,
+.header img:hover{
+    transform: scale(1.1);
+    transition: 200ms;
 }
 
-input[type="text"] {
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    width: 210px;
-    margin-bottom: 20px;
-    margin-right: 10px;
+.header .nav-links li a,
+.header .other-links li a{
+    color: var(--azul_oscuro);
 }
 
-/*A partir de aquí*/
-.main,
-.articulo-pequeño {
-    display: flex;
-    justify-content: space-around;
-    margin-top: .5rem;
+.header .nav-links li,
+.header .other-links li{
+    display: inline-block;
+    margin-right: 1rem;
 }
 
-h1,
-p {
-    text-align: center;
+.header .busqueda input[type="text"] {
+    border: 0.1rem solid var(--gris);
+    border-radius: 0.5rem;
+    width: 15rem;
+    margin-right: 1.2rem;
 }
 
-
-.main ul,
-.articulo-pequeño ul {
-    /*float: left; */
-    text-align: center;
-    padding: 0.5%;
-    /*border-bottom: 1px solid #ccc;*/
-    border-left: 1px solid #ccc;
-    border-right: 1px solid #ccc;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-}
-
-.main img {
+/*-------MAIN-------*/
+.articulos-principales img {
     width: 100%;
     margin-bottom: 0.5%;
 }
 
-.articulo .titulo {
+.titulo {
     font-size: x-large;
 }
 
-.main .datos {
+.datos {
     font-size: small;
     font-style: italic;
     text-align: left;
     padding-left: 5%;
 }
 
-.main .texto {
-    color: black;
-    margin-top: 1%;
-}
 
-.main .texto-clicable:hover {
-    color: #092b37;
+.titulo:hover,
+.datos:hover {
+    color: var(--azul_oscuro);
     transition: 200ms;
 }
 
-.main .articulo-izquierdo {
+.articulos-principales .articulo-derecho,
+.articulos-principales .articulo-izquierdo {
     width: 25%;
 }
 
-.main .articulo-central {
+.articulos-principales .articulo-central {
     width: 50%;
-}
-
-.main .articulo-derecho {
-    width: 25%;
 }
 
 
 .separador .top {
     width: 100%;
-    border-top: 4px solid #000000;
+    border-top: 0.2rem solid #000000;
     margin: 0.5% 0;
 }
 
 .separador .bottom {
     width: 100%;
-    border-top: 1px solid #000000;
+    border-top: 0.1rem solid #000000;
     margin: 0.5% 0;
 }
 
 .separador p {
     font-size: x-large;
-    margin-left: 7%;
+    text-align: left;
+    margin-left: 3rem;
+    text-transform: uppercase;
 }
 
-.articulo-pequeño img {
+.cuatro-articulos img {
     width: 100%;
 }
 
-.articulo-pequeño ul {
+.cuatro-articulos ul {
     width: 25%;
 }
 
-.articulo-pequeño ul li a h4 {
+.cuatro-articulos ul li a h4 {
     font-size: 1.2rem !important;
 }
 
 .videos-pequeños {
-    width: 24%;
+    width: 22%;
     height: auto;
-    margin-left: 0.6%;
-    padding: 10px;
 }
 
 .videos {
     margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-around;
 }
 
+.articulos-principales,
+.cuatro-articulos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: .5rem;
+}
+h2,
+p {
+    text-align: center;
+}
+
+.articulos-principales ul,
+.cuatro-articulos ul {
+    text-align: center;
+    padding: 0.5%;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
 /*Footer*/
 #footer {
     background-color: var(--negro);
