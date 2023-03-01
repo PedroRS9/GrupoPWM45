@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.02em;
+    text-decoration: none;
+}
+
+.header{
+    background-color:#1F1D1D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2% 10%;
+    width: 100%;
+    height: 10%;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+
+.header .nav-links li{
+    display: inline-block; 
+    padding: 20px;
+}
+.header .other-links li{
+    display: inline-block;
+    padding: 20px;
+}
+
+.header .logo img:hover{
+    transform: scale(1.05);
+    transition: 250ms;
+}
+.header .nav-links li:hover{
+    transform: scale(1.1);
+    transition: 200ms;
+}
+
+.header .other-links li:hover{
+    transform: scale(1.1);
+    transition: 200ms;
+}
+.header .logo img{
+    height: 55px;
+    width: auto;
+}
+
+.header .busqueda img{
+    height: 35px;
+    width: auto;
+    cursor: pointer;
+    transform: translateY(12px);
+}
+
+.header a{
+    color:#5095AD;
+}
+
+input[type="text"] {
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    width: 210px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+/*A partir de aquí*/
+
+.main ul{
+    float:left;
+    text-align: center;
+    padding: 0.5%;
+}
+.main img{
+    width: 100%;
+    margin-bottom: 0.5%;
+}
+.main .titulo{
+    font-size: x-large;
+}
+.main .datos{
+    font-size: small;
+    font-style: italic;
+    text-align: left;
+    padding-left: 5%;
+}
+.main .texto{
+    color: black;
+    margin-top: 1%;
+}
+.main .texto-clicable:hover{
+    color: #092b37;
+    transition: 200ms;
+}
+.main .articulo-izquierdo{
+    width: 25%;
+}
+.main .articulo-central{
+    width: 50%;
+}
+.main .articulo-derecho{
+    width: 25%;
+}
