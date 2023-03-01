@@ -1,61 +1,69 @@
 /* CSS PARA LA PÁGINA DE "CONTACTO" */
 
-.headerContacto h2{
+.headerContacto h2 {
     position: relative;
     display: inline-block;
     margin-right: 10px;
 }
 
-.headerContacto img{    
+.headerContacto img {
     width: 25px;
     height: 25px;
 }
 
 /* --------------------------------------------------------------------------------------------------- */
 /* CSS PARA LA PÁGINA DE "SUBSCRIBE" */
-.contenedor-cuadrados{
+.contenedor-cuadrados {
+    margin-top: 2.5rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-.cuadrado{
-    background-color:gainsboro;    
-    width: 32%;    
-    margin-left: 1em; 
+.cuadrado {
+    background-color: gainsboro;
+    width: 32%;
+    margin-left: 1em;
 }
 
-.cuadrado h2{
+.cuadrado h2 {
     text-align: center;
 }
 
-.cuadrado ul{
+.cuadrado ul {
     display: block;
     list-style-position: inside;
     margin-bottom: 1.5rem;
 }
 
 /* BOTÓN DE SUSCRIBIRSE */
-.subButton{
+.subButton {
     background-color: #5095AD;
-    color:black;
+    color: black;
     border: none;
     font-weight: bold;
     font-size: 1.5rem;
-    display: block;    
+    display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1rem;
 }
+
 /* ------------------- */
-.subEmpresa{
+.subEmpresa {
     text-align: center;
 }
 
-    .subEmpresa img{
-        margin-top: 2em;
-    }
+.subEmpresa img {
+    margin-top: 2em;
+}
 
-    .subEmpresa p{
-        text-align: center;
-    }
+.subEmpresa p {
+    text-align: center;
+}
+
+
+/* --- */
+.generic-container {
+    margin: 2rem;
+}
