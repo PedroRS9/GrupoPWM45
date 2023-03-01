@@ -1,65 +1,82 @@
-<link rel="stylesheet" href="../styles/index.css">
-<link rel="stylesheet" href="../styles/forms.css">
-<link rel="stylesheet" href="../styles/subscription-form.css">
-<div class="semi-modal flex">
-    <section>
-        <h2>Suscripción</h2>
-        <hr>
+<!DOCTYPE html>
+<html lang="en">
 
-        <h3>Tipo de suscripción elegida</h3>
-        <p>Mensual (por ejemplo)</p>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/forms.css">
+    <link rel="stylesheet" href="../styles/subscription-form.css">
+</head>
 
-        <h3>Datos personales</h3>
+<body>
 
-        <form id="subscription-form" class="flex" method="post" action="//TODO">
+    <script type="module" src="../scripts/components/header.js"></script>
 
-            <fieldset class="flex">
-                <label for="name">Nombre</label>
-                <input type="text" id="name" name="name" placeholder="escribe aquí tu nombre..." required>
-            </fieldset>
-            <fieldset class="flex">
-                <label for="lastname">Apellidos</label>
-                <input type="text" id="lastname" name="lastname" placeholder="escribe aquí tu apellido..." required>
-            </fieldset>
+    <div class="semi-modal flex">
+        <section>
+            <h2>Suscripción</h2>
+            <hr>
 
-            <fieldset class="flex">
-                <label for="country">País</label>
-                <select id="country" name="country">
-                    <option value="">Elige una opción</option>
-                    <option value="opt1">opt1</option>
-                    <option value="opt2">op2</option>
-                </select>
-            </fieldset>
-            <fieldset class="flex">
-                <label for="province">Provincia</label>
-                <select id="province" name="province">
-                    <option value="">Elige una opción</option>
-                    <option value="opt1">opt1</option>
-                    <option value="opt2">op2</option>
-                </select>
-            </fieldset>
+            <h3>Tipo de suscripción elegida</h3>
+            <p>Mensual (por ejemplo)</p>
 
-            <h3>Pago</h3>
+            <h3>Datos personales</h3>
 
-            <div class="flex">
+            <form id="subscription-form" class="flex" method="post" action="//TODO">
 
-                <label class="flex" for="credit-card">
-                    <img src="../icons/credit-card.png" alt="credit card">
-                    <figcaption>Tarjeta de crédito</figcaption>
-                    <input type="radio" name="pay-method" id="credit-card">
-                </label>
+                <fieldset class="flex">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" placeholder="escribe aquí tu nombre..." required>
+                </fieldset>
+                <fieldset class="flex">
+                    <label for="lastname">Apellidos</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="escribe aquí tu apellido..." required>
+                </fieldset>
 
-                <label class="flex" for="paypal">
-                    <img src="../icons/paypal.png" alt="paypal">
-                    <figcaption>PayPal</figcaption>
-                    <input type="radio" name="pay-method" id="paypal">
-                </label>
+                <fieldset class="flex">
+                    <label for="country">País</label>
+                    <select id="country" name="country">
+                        <option value="">Elige una opción</option>
+                        <option value="opt1">opt1</option>
+                        <option value="opt2">op2</option>
+                    </select>
+                </fieldset>
+                <fieldset class="flex">
+                    <label for="province">Provincia</label>
+                    <select id="province" name="province">
+                        <option value="">Elige una opción</option>
+                        <option value="opt1">opt1</option>
+                        <option value="opt2">op2</option>
+                    </select>
+                </fieldset>
 
-            </div>
-        </form>
+                <h3>Pago</h3>
 
-        <button type="submit" form="subscription-form">PAGAR</button>
+                <div class="flex">
 
-    </section>
+                    <label class="flex" for="credit-card">
+                        <img src="../icons/credit-card.png" alt="credit card">
+                        <figcaption>Tarjeta de crédito</figcaption>
+                        <input type="radio" name="pay-method" id="credit-card">
+                    </label>
 
-</div>
+                    <label class="flex" for="paypal">
+                        <img src="../icons/paypal.png" alt="paypal">
+                        <figcaption>PayPal</figcaption>
+                        <input type="radio" name="pay-method" id="paypal">
+                    </label>
+
+                </div>
+            </form>
+
+            <button type="submit" form="subscription-form">PAGAR</button>
+
+        </section>
+
+    </div>
+</body>
+
+</html>

@@ -1,30 +1,45 @@
-<link rel="stylesheet" href="../styles/index.css">
-<link rel="stylesheet" href="../styles/forms.css">
-<link rel="stylesheet" href="../styles/signup.css">
-<div class="semi-modal flex">
-    <section>
-        <h2>Sign up</h2>
-        <hr>
-        <form id="signup-form" class="flex" method="post" action="//TODO">
+<!DOCTYPE html>
+<html lang="en">
 
-            <fieldset class="flex">
-                <label for="email">email</label>
-                <input type="text" id="email" name="email" placeholder="escribe aquí tu email..." required>
-            </fieldset>
-            <fieldset class="flex">
-                <label for="password">contraseña</label>
-                <input type="password" id="password" name="password" placeholder="escribe aquí tu contraseña..."
-                    required>
-            </fieldset>
-            <fieldset class="flex">
-                <label for="repeat-password">repetir contraseña</label>
-                <input type="password" id="repeat-password" name="repeat-password"
-                    placeholder="repite aquí tu contraseña..." required>
-            </fieldset>
-        </form>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/forms.css">
+    <link rel="stylesheet" href="../styles/signup.css">
+</head>
 
-        <button type="submit" form="signup-form">Sign up</button>
+<body>
+    <script type="module" src="../scripts/components/header.js"></script>
+    <div class="semi-modal flex">
+        <section>
+            <h2>Sign up</h2>
+            <hr>
+            <form id="signup-form" class="flex" method="post" action="//TODO">
 
-    </section>
+                <fieldset class="flex">
+                    <label for="email">email</label>
+                    <input type="text" id="email" name="email" placeholder="escribe aquí tu email..." required>
+                </fieldset>
+                <fieldset class="flex">
+                    <label for="password">contraseña</label>
+                    <input type="password" id="password" name="password" placeholder="escribe aquí tu contraseña..."
+                        required>
+                </fieldset>
+                <fieldset class="flex">
+                    <label for="repeat-password">repetir contraseña</label>
+                    <input type="password" id="repeat-password" name="repeat-password"
+                        placeholder="repite aquí tu contraseña..." required>
+                </fieldset>
+            </form>
 
-</div>
+            <button type="submit" form="signup-form">Sign up</button>
+
+        </section>
+
+    </div>
+</body>
+
+</html>
