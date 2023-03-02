@@ -1,7 +1,7 @@
 #footer {
     background-color: var(--negro);
 
-    height: 5.5rem;
+    height: 3.5rem;
     width: 100%;
 
     justify-content: space-between;
@@ -29,12 +29,12 @@
 }
 
 #social-links img {
-    width: 2.8rem;
+    width: 35%;
 }
 
 #footer-links {
     width: 48rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
 
     text-align: center;
 }
