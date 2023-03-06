@@ -1,0 +1,52 @@
+/*-------RESET-------*/
+
+*{
+    list-style: none;
+    font-size: 1.05rem;
+    text-decoration: none !important;
+    color: var(--negro);
+}
+
+/*-------HEADER-------*/
+
+.header {
+    background-color: var(--negro);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+}
+
+.header .logo img {
+    height: 2.5rem;
+    cursor: pointer;
+}
+.header .busqueda img{
+    height: 2rem;
+    cursor: pointer;
+}
+
+.header  li:hover,
+.header img:hover{
+    transform: scale(1.1);
+    transition: 200ms;
+}
+
+.header .nav-links li a,
+.header .other-links li a{
+    color: var(--azul_oscuro);
+}
+
+.header .nav-links li,
+.header .other-links li{
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.header .busqueda input[type="text"] {
+    border: 0.1rem solid var(--gris);
+    border-radius: 0.5rem;
+    width: 15rem;
+    margin-right: 1.2rem;
+}
