@@ -1,1 +1,1 @@
-export * from "/scripts/main.js"
+export * from "./main.js"
