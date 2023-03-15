@@ -56,61 +56,95 @@
     cursor: pointer;
 }
 
-/* Móviles */
-@media screen and (max-width: 640px){
-    .header .hamburger{
-        display: block;
-        color: var(--azul_oscuro);
-        font-size: 2.5rem;
-    }
-
-    .header .busqueda,
-    .header .nav-links,
-    .header .other-links{
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        gap: 0;
-        flex-direction: column;
-        background-color: var(--negro);
-        width: 100%;
-        text-align: center;        
-    }
-}
-
 /* Tablet */
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1050px){
     .header .hamburger{
         display: block;
         color: var(--azul_oscuro);
         font-size: 2.5rem;
     }
 
-    /* Desaparecen en esta resolución */
-    .header .nav-links,
+    .header .hamburger:hover{
+        transform: scale(1.1);
+        transition: 200ms;
+    }
+
+    /* Desaparecen en esta resolución */    
     .header .other-links{
         position: fixed;
         left: -100%;
-        top: 70px;
-        gap: 0;
-        flex-direction: column;
+        top: 70px;        
         background-color: var(--negro);
         width: 100%;
-        text-align: center;        
+        text-align: center;                    
     }
 
-    .header li{
-        margin: 16px 0;
+    /* Eliminamos el enlace de Inicio,
+    supuestamente ya no hace falta en responsive, según 
+    el figma...*/
+    .header .nav-links li:first-child{
+        display: none;
     }
     
-    .header .nav-links.active {
-        left: 0;        
-        top: 3rem;
-        display: flex;
-    }
+    .header .other-links li{
+        margin: 1rem;
+        display: block; 
+    }        
 
     .header .other-links.active{
         left: 0;        
-        display: flex;
+        top: 3rem;        
+        display: block;
+    }
+}
+
+/* Móviles */
+@media screen and (max-width: 710px){    
+    /* No hay ECONOMIA-POLITICA-CULTURA ni buscador 
+    en móviles */
+    .header{
+        justify-content:flex-start;
+    }
+
+    .header .logo img{
+        margin-left: 1rem;
+    }
+
+    .header .hamburger{
+        position: absolute;
+        right: 1rem;
+    }
+
+    .header .nav-links, .header .busqueda{
+        position: fixed;
+        left: -100%;
+        top: 70px;        
+        background-color: var(--negro);
+        width: 100%;
+        text-align: center;                    
+    }
+
+    /* Para que los enlaces se vean cada uno en una línea
+    y no horizontalmente (o sea, quitarle el display inline-block) */
+    .header .nav-links li{
+        margin: 1rem;
+        display: block; 
+    }
+
+    .header .busqueda.active{
+        left: 0;
+        top: 3rem;        
+    }
+
+    .header .nav-links.active{
+        left: 0;
+        top: 5rem;
+        display: block;
+    }
+
+    .header .other-links.active{
+        left: 0;
+        top: 12.5rem;
+        display: block;
     }
 }
