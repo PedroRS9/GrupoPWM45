@@ -59,13 +59,15 @@
     margin-left: 3rem;
     text-transform: uppercase;
 }
-
+.cuatro-articulos{
+    display: flex;
+}
 .cuatro-articulos img {
     width: 100%;
 }
 
 .cuatro-articulos ul {
-    width: 25%;
+    width: 50%;
 }
 
 .cuatro-articulos ul li a h4 {
@@ -73,7 +75,7 @@
 }
 
 .videos-pequeños {
-    width: 22%;
+    width: 44%;
     height: auto;
 }
 
@@ -84,11 +86,19 @@
 }
 
 .articulos-principales,
-.cuatro-articulos {
+.cuatro-articulos .primera-linea,.cuatro-articulos .segunda-linea, .videos .primera-linea, .videos .segunda-linea{
     display: flex;
     justify-content: space-around;
     margin-top: .5rem;
 }
+
+.videos .primera-linea{
+    width: 50%;
+}
+.videos .segunda-linea{
+    width: 50%;
+}
+
 h2,
 p {
     text-align: center;
@@ -212,4 +222,84 @@ p {
 }
 .publicar-comentario textarea{
     width: 20rem;
+}
+
+/*Media query*/
+
+@media screen and (max-width: 835px) {
+    .articulos-principales{
+        display: block;
+    }
+
+    .articulo-central, .articulo-izquierdo, .articulo-derecho{
+        display: flex;
+        min-width: 100%;
+    }
+    .articulo-central div, .articulo-izquierdo div, .articulo-derecho div{
+        max-width: 50%;
+    }
+
+    .articulos-principales img{
+        object-fit: cover;
+        width: 395px;
+        height: 316px;
+        max-width: 100%;
+        margin-left: 0.3rem;
+    }
+    .articulos-principales .contenido2{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .cuatro-articulos {
+        display: block;
+    }
+    .cuatro-articulos ul{
+        width: 50%;
+    }
+    .videos{
+        display: block;
+    }
+    .videos .primera-linea{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .videos .segunda-linea{
+        width: 100%;
+    }
+
+    @media screen and (max-width: 376px) {
+
+        .articulos-principales div{
+            max-width: 100%;
+            margin-right: 0.8rem;
+            margin-left: 0.2rem;
+        }
+
+        .articulo-izquierdo, .articulo-derecho, .articulo-central{
+            display: block;
+        }
+
+        .videos .primera-linea, .cuatro-articulos .primera-linea,
+        .videos .segunda-linea, .cuatro-articulos .segunda-linea
+        {
+            display: block;
+        }
+        .cuatro-articulos ul{
+            width: 100%;
+        }
+        .videos-pequeños {
+            width: 100%;
+        }
+
+        .videos .primera-linea{
+            margin-bottom: 0rem;
+        }
+        .videos .segunda-linea{
+            margin-top: 0rem;
+        }
+
+
+
+    }
 }
