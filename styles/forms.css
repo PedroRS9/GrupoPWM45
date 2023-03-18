@@ -152,7 +152,8 @@
         position: unset;
     }
 
-    .semi-modal input {
+    .semi-modal input,
+    .semi-modal select {
         width: 100%;
     }
 
