@@ -1,0 +1,15 @@
+{
+    "nextId": 1,
+    "users": [
+        {
+            "id": 0,
+            "name": "root",
+            "lastLame": "toor",
+            "country": "Spain",
+            "province": "LPGC",
+            "email": "root@root.com",
+            "password": "1234",
+            "subscription": null
+        }
+    ]
+}
