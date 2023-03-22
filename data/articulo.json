@@ -1,0 +1,34 @@
+[
+    {
+        "categoria":"Economía",
+        "titulo":"Bruselas quiere evitar la guerra entre las operadoras y los gigantes tecnológicos por la financiación de las redes",
+        "entrada":"El presidente de Telefónica lidera el clamor de las compañías de telecomunicaciones para que los gigantes de internet, como Google o Netflix, les paguen una “contribución justa”",
+        "imagen":"../images/flor.jpg",
+        "pie_foto":"José María Álvarez-Pallete, en su intervención inaugural del MWC23 de Barcelona este lunes.",
+        "datos":"Daniel Verdú",
+        "fecha":"Barcelona - 27 FEB 2023 - 12:11 CET",
+        "contenido":"No se podía buscar mejor escenario que el Mobile World Congress (MWC) de Barcelona para escenificar la guerra abierta declarada entre las grandes compañías de telecomunicaciones, como Telefónica, Vodafone u Orange, y los gigantes de internet estadounidenses, como Google o Netflix, tras el anuncio de la Comisión Europea el jueves de que ha abierto una consulta pública para decidir si estas últimas deben colaborar en la financiación de las nuevas redes como el 5G o la fibra óptica...."
+    },
+    
+    {
+        "titulo_mas_vistos":"Los articulos mas vistos",
+        "articulo1_mas_vistos":"El primer motor de avión propulsado por hidrógeno con tecnología española arrancará en 2025",
+        "articulo2_mas_vistos":"Hacienda pone el foco en las reformas y rehabilitaciones de vivienda en su plan anual de lucha contra el fraude",
+        "articulo3_mas_vistos":"Bruselas quiere evitar la guerra entre las operadoras y los gigantes tecnológicos por la financiación de las redes",
+        "titulo_relacionados":"articulos relacionados",
+        "articulo1_relacionados":"El primer motor de avión propulsado por hidrógeno con tecnología española arrancará en 2025",
+        "articulo2_relacionados":"Hacienda pone el foco en las reformas y rehabilitaciones de vivienda en su plan anual de lucha contra el fraude",
+        "articulo3_relacionados":"Bruselas quiere evitar la guerra entre las operadoras y los gigantes tecnológicos por la financiación de las redes"
+
+    },
+    {
+        "titulo_caja_comentarios":"Comentarios",
+        "imagen_usuario1":"../icons/icono.png",
+        "nombre_usuario1":"victor",
+        "contenido_comentario_usuario1":"Lagard y su política a la recua del dólar. La UE no puede seguir a la Reserva Federal y su desastrosa lucha contra la inflación",
+        "imagen_usuario2":"../icons/icono.png",
+        "nombre_usuario2":"jose",
+        "contenido_comentario_usuario2":"pues yo opino lo contrario xd"
+    }
+
+]
