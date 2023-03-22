@@ -31,8 +31,28 @@ export default class User {
     subscription = () => this._subscription
 
 
-    isLoggedIn = () => { }
+    // *=> session storage
 
-    login = () => { }
-    logout = () => { }
+    static loggedIn = () => new User(JSON.parse(sessionStorage.getItem("user")))
+
+    isLoggedIn = () => !!sessionStorage.getItem("user")
+    login = () => sessionStorage.setItem("user", this.toString())
+    logout = () => sessionStorage.removeItem("user")
+
+
+
+    // *=> serializarion
+
+    toObj = () => ({
+        id: this.id(),
+        email: this.email(),
+        password: this.password(),
+        name: this.name(),
+        lastLame: this.lastLame(),
+        country: this.country(),
+        province: this.province(),
+        subscription: this.subscription()
+    })
+
+    toString = () => JSON.stringify(this.toObj())
 }
