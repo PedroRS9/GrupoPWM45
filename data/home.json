@@ -43,7 +43,9 @@
         "datos":"Autor"
     },
 
-    
+
+
+
     {
         "imagen":"../images/tiempo1.jpeg",
         "titulo":"El chipichipi no se va de las islas",
@@ -64,5 +66,22 @@
         "imagen":"../images/tiempo4.gif",
         "titulo":"Canarias espera lluvias débiles y calima este miércoles",
         "datos":"Autor"
+    },
+
+
+
+    {
+        "src":"https://www.youtube.com/embed/LEL8nYR-NhM"
+    },
+
+    {
+        "src":"https://www.youtube.com/embed/cYQQvca3CbA"
+    },
+    {
+        "src":"https://www.youtube.com/embed/kFCgfWogNo0"
+    },
+    {
+        "src":"https://www.youtube.com/embed/HbHOZoDyXQ0"
     }
+
 ]
