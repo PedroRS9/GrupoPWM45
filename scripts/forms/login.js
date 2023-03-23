@@ -27,19 +27,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (!user.exists()) {
                 errorMsg.innerText = "El email no existe"
+                errType = "email"
                 errorMsg.classList.remove("hidden")
                 return
             }
 
-            // TODO: El usuario existe
+            // Client-validation, but not should be done here
+            if (user.password() !== password.value) {
+                errorMsg.innerText = "La contraseña no coincide"
+                errorMsg.classList.remove("hidden")
+                errType = "password"
+                return
+            }
 
-
+            user.login()
+            window.history.back()
         })
 
     })
 
     // Hiddens the error-msg if the input is empty (maches errType)
     document.querySelectorAll('#login-form input').forEach(elm => elm.addEventListener("input", e =>
-        elm.value === "" && errType === e.target.id && document.querySelector('.error-msg').classList.add("hidden")
+        errType === e.target.id && document.querySelector('.error-msg').classList.add("hidden")
     ))
 })
