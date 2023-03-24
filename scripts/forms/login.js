@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
             errorMsg.innerText = "No es un email valido"
             errorMsg.classList.remove("hidden")
             errType = "email"
+            email.reportValidity()
             return
         }
 
