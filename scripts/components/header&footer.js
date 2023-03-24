@@ -1,5 +1,6 @@
 import { load } from '../index.js'
 import User from '../../model/User.js'
+import hamburger from '../hamburger.js'
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -7,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         load('../../html/header.html', node => document.querySelector("body").insertBefore(node, document.querySelector("main"))),
         load('../../html/footer.html', node => document.querySelector("body").appendChild(node))
     ]
+
 
     Promise.all(pr).then(() => {
 
@@ -16,12 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const [subscribe, login, signup] = document.querySelectorAll(".other-links li a")
 
-
-            subscribe.innerHTML = `<img style="width: 1.8rem" src="../icons/icono.png" />`
-            subscribe.href = ""
-            subscribe.onclick = e => e.preventDefault()
-
-            login.innerText = user.name()
+            login.innerHTML = `${'<img class="logged-img" src="../icons/icono.png" />'} ${user.name()}`
             login.href = ""
             login.onclick = e => e.preventDefault()
             login.classList.add("logged")
@@ -30,5 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
             signup.href = ""
             signup.addEventListener("click", () => user.logout())
         }
-    })
+
+    }).then(() => hamburger())
+
 })

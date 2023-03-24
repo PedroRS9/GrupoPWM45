@@ -61,6 +61,12 @@
     color: rgb(50, 200, 50) !important;
 }
 
+.logged-img {
+    width: 1.8rem;
+    margin-right: .5rem
+}
+
+
 /* Tablet */
 @media screen and (max-width: 1050px) {
     .header .hamburger {
