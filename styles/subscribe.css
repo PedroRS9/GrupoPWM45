@@ -1,41 +1,25 @@
-/* CSS PARA LA PÁGINA DE "CONTACTO" */
-
-.headerContacto h2 {
-    position: relative;
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.headerContacto img {
-    width: 25px;
-    height: 25px;
-}
-
-/* --------------------------------------------------------------------------------------------------- */
-/* CSS PARA LA PÁGINA DE "SUBSCRIBE" */
-
 .contenedor-cuadrados {    
-    margin-top: 2.5rem;
+    margin-top: 3.5rem;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     list-style: disc;        
 }
 
-.cuadrado {
+.cuadrado_sub {
     background-color: gainsboro;    
     padding: 1em;
     margin-left: 1em;
     margin-right: 1em;
 }
 
-.cuadrado h2 {
+.cuadrado_sub h2 {
     text-align: center;
     padding-top: 1em;
 
 }
 
-.cuadrado ul {
+.cuadrado_sub ul {
     display: block;
     list-style-position: inside;
     margin-bottom: 1.5rem;
@@ -80,20 +64,16 @@
         justify-content: center;      
     }
 
-    .cuadrado{
+    .cuadrado_sub{
         width: 50%;
         margin: 10px;
     }    
 }
 
 @media screen and (max-width: 710px){    
-    .cuadrado{
+    .cuadrado_sub{
         width: 70%;
         font-size: 0.8rem;
         padding: 1rem;
     }
-    .generic-container{
-        font-size: 0.8rem;
-    }
 }
-
